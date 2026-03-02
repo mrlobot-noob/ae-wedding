@@ -47,3 +47,7 @@ nav a {
     width: 100%;
     border-radius: 10px;
 }
+.hero {
+    padding: 100px 20px;
+    background: linear-gradient(to right, #f8e8ee, #e3f2fd);
+}
