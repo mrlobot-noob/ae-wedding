@@ -2,115 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AE Wedding Celebration</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Georgia', serif;
-            text-align: center;
-            background: #fff;
-            color: #333;
-        }
-
-        .hero {
-            background: linear-gradient(to right, #f8f8f8, #ffffff);
-            padding: 100px 20px;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .date {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-
-        .countdown {
-            font-size: 1.8rem;
-            color: #b48b3c;
-            margin-top: 20px;
-        }
-
-        section {
-            padding: 60px 20px;
-        }
-
-        .gold {
-            color: #b48b3c;
-        }
-
-        footer {
-            padding: 20px;
-            background: #f4f4f4;
-            font-size: 0.9rem;
-        }
-
-        button {
-            padding: 10px 20px;
-            background: #b48b3c;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            opacity: 0.9;
-        }
-    </style>
+    <title>EJ & Love Wedding</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="hero">
-        <h1>A & E</h1>
-        <div class="date">We're Getting Married</div>
-        <div>December 20, 2026</div>
-        <div class="countdown" id="countdown"></div>
-    </div>
+    <nav>
+        <h1>Angel & EJ</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pictures.html">Pictures</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="photobooth.html">Photo Booth</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <h2 class="gold">Our Story</h2>
-        <p>
-            It started with a simple hello...  
-            And on February 5, 2026, she said yes. 💍  
-            Now we begin forever.
-        </p>
+    <section class="hero">
+        <h2>We Got Married 💍</h2>
+        <p>February 11, 2026</p>
+        <p>Celebrating love, laughter, and forever.</p>
     </section>
-
-    <section>
-        <h2 class="gold">Event Details</h2>
-        <p><strong>Venue:</strong> To Be Announced</p>
-        <p><strong>Time:</strong> 4:00 PM</p>
-        <p><strong>Dress Code:</strong> Formal</p>
-    </section>
-
-    <section>
-        <h2 class="gold">RSVP</h2>
-        <p>Please confirm your attendance.</p>
-        <button onclick="window.location.href='https://forms.gle/'">
-            RSVP Now
-        </button>
-    </section>
-
-    <footer>
-        Made with love ❤️ | AE 2026
-    </footer>
-
-<script>
-    const weddingDate = new Date("December 20, 2026 00:00:00").getTime();
-    const countdownElement = document.getElementById("countdown");
-
-    setInterval(function() {
-        const now = new Date().getTime();
-        const distance = weddingDate - now;
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-
-        countdownElement.innerHTML = days + " days to go";
-    }, 1000);
-</script>
 
 </body>
 </html>
